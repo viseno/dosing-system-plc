@@ -13,18 +13,22 @@ This projects demonstrate an understanding in a typical industrial automation co
 This system is mainly used in industries such as food and beverage (F&B), chemicals, liquid mixing, etc.
 
 The system is consists of several components including:
-1. Silo 1 & 2
+1. Silo 1 & 2:
    These silo contains different liquid that will be mixed according to a certain ratio between them in the mixer. Each of these silo consists of components such as load cells (to measure the weight of the liquid inside each silo),
    Spiral motor (acts as an actuator to extract a certain amount of liquid from each silo), Circuit Breaker to protect from overcurrent and overload
-2. Elevator 1 & 2
+2. Elevator 1 & 2:
    These Elevator are used to fill each of the silo when given a certain signal. Each elevator consist of a motor that will carry the liquid and fill it to the corresponding silo), Circuit Breaker to protect from overcurrent and overload
-3. Mixer
+3. Mixer:
    The Mixer consist of a mechanical agitator that will be used to mix the liquid inside the mixing silo. A timer is also present to provide a "done mixing signal", Circuit Breaker to protect from overcurrent and overload
-4. Gate
+4. Gate:
    The Gate is used to release the mixed product into the next process (stage). The Gate consist of a gate actuator (open/close coil). A timer is also present to provide a "close gate signal", Circuit Breaker to protect from overcurrent and overload
-5. SCADA-HMI
+5. SCADA-HMI:
    The SCADA system is connected to the PLC through an OPC UA communication protocol and a HMI display to control the entire system. The HMI consist of components such as indicators (lights, graphic displays, LED displays) and actuators (Push Buttons, nominal input),
    Circuit Breaker to protect from overcurrent and overload
+6. PLC:
+   The PLC is used to control is logic and sends signal to actuate a certain output.
+7. VFD:
+   VFD is a motor driving method used to send signals that will turn on or off the motor and the speed of the motor. 3 VFD is used in this system which is for the Spiral 1 motor, Spiral 2 motor, and Mixer motor.
 
 The major sequence in this system is the following:
 1. Start System
